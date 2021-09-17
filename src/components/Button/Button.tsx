@@ -2,13 +2,9 @@ import React, { FC } from 'react';
 import { ButtonProps } from 'types';
 import './Button.scss';
 
-const Button: FC<ButtonProps> = ({ text }) => {
-  const handleButtonClick = () => {
-    console.log('click');
-  };
-
+const Button: FC<ButtonProps> = ({ text, handleClick }) => {
   return (
-    <button type="button" className="button" onClick={handleButtonClick}>
+    <button type="button" className="button" onClick={handleClick}>
       {text}
     </button>
   );

@@ -13,10 +13,22 @@ export interface InputSearchProps {
 }
 
 export interface ProductProps {
+  id: number;
   price: number;
   name: string;
+  amount: number;
 }
 
 export interface ButtonProps {
   text: string;
+  handleClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;
+  className?: string;
+  children?: ReactNode;
+  type?: 'button' | 'submit';
+  ariaLabel?: string;
 }
+
+export type ContextType = {
+  products: ProductProps[];
+  addProduct: (product: ProductProps) => void;
+};

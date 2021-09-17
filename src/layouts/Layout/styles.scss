@@ -9,8 +9,8 @@
   --c-grey2: #666;
   --c-grey3: #999;
   --c-grey4: #c8c8c8;
-  --c-background: #f2f2f2;
-  --c-white: #fafafa;
+  --c-background: #fafafa;
+  --c-white: #fff;
   --c-black: #0c0c0c;
   --c-red: #ff3333;
   --xxs: 1.2rem;
@@ -37,11 +37,14 @@ body {
   font-size: 1.6rem;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
-  background-color: var(--background);
+  background-color: var(--c-background);
 }
 
 .main {
   margin: 0 auto;
-  max-width: 1360px;
+  max-width: 1920px;
   padding: var(--spaceSmall);
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  grid-column-gap: 5rem;
 }

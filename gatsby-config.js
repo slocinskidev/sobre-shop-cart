@@ -36,6 +36,7 @@ module.exports = {
         src: path.join(__dirname, 'src'),
         pages: path.join(__dirname, 'src/pages'),
         utils: path.join(__dirname, 'src/utils'),
+        providers: path.join(__dirname, 'src/providers'),
       },
     },
   ],
