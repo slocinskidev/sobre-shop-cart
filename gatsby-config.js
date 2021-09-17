@@ -6,6 +6,16 @@ module.exports = {
     title: 'sobre-shop-cart',
   },
   plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: path.join(__dirname, `src`, `images`),
+      },
+    },
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     'gatsby-plugin-sass',
     'gatsby-plugin-gatsby-cloud',
     'gatsby-plugin-react-helmet',

@@ -1,7 +1,28 @@
 .product {
-  background-color: var(--c-persianPink);
-  padding: var(--spaceBig);
+  background-color: var(--c-white);
   display: grid;
+  width: 300px;
+  height: 300px;
   place-items: center;
-  border-radius: 2rem 2rem 0 0;
+  padding: 2rem;
+  border-radius: 1rem;
+  filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.24))
+    drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.12));
+
+  &__price {
+    align-self: start;
+    border-radius: 0.4rem;
+    justify-self: end;
+    border: 2px solid black;
+    padding: 0.4rem 0.8rem;
+    font-size: 1.4rem;
+  }
+
+  &__image {
+    background-color: red;
+  }
+
+  &__name {
+    font-size: 2rem;
+  }
 }

@@ -11,3 +11,12 @@ export interface InputSearchProps {
   type: InputSearchType;
   handleOnChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
+
+export interface ProductProps {
+  price: number;
+  name: string;
+}
+
+export interface ButtonProps {
+  text: string;
+}

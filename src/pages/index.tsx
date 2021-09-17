@@ -1,14 +1,13 @@
 import React from 'react';
 import { PageProps } from 'gatsby';
-
-import Title from 'components/Title';
 import Layout from 'layouts/Layout';
-import SearchBar from 'components/SearchBar/SearchBar';
+import SearchBar from 'components/SearchBar';
+import ProductList from 'components/ProductList';
 
 const Home: React.FC<PageProps> = () => (
   <Layout>
     <SearchBar />
-    <Title>Hello TypeScript!</Title>
+    <ProductList />
   </Layout>
 );
 
