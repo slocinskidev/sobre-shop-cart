@@ -2,11 +2,14 @@ import React from 'react';
 import { PageProps } from 'gatsby';
 
 import Title from 'components/Title';
+import Layout from 'layouts/Layout';
+import SearchBar from 'components/SearchBar/SearchBar';
 
 const Home: React.FC<PageProps> = () => (
-  <main>
+  <Layout>
+    <SearchBar />
     <Title>Hello TypeScript!</Title>
-  </main>
+  </Layout>
 );
 
 export default Home;

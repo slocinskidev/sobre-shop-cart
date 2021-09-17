@@ -21,7 +21,7 @@ module.exports = {
         components: path.join(__dirname, 'src/components'),
         layouts: path.join(__dirname, 'src/layouts'),
         images: path.join(__dirname, 'src/images'),
-        scss: path.join(__dirname, 'src/scss'),
+        theme: path.join(__dirname, 'src/theme'),
         types: path.join(__dirname, 'src/types'),
         src: path.join(__dirname, 'src'),
         pages: path.join(__dirname, 'src/pages'),
